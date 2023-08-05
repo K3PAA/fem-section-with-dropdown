@@ -9,10 +9,11 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <header class="primary-header">
+    <header class="primary-header | container flex">
       <a href="#" class="primary-header__logo">
         <img
           src="./images/logo.svg"
@@ -36,25 +37,118 @@
       </button>
 
       <nav class="primary-navigation" id="primary-navigation">
-        <ul class="primary-navigation__list" role="list">
-          <li class="primary-navigation__list-el">Features</li>
-          <li class="primary-navigation__list-el">Company</li>
-          <li class="primary-navigation__list-el"><a href="#"> Careers</a></li>
-          <li class="primary-navigation__list-el"><a href="#"> About</a></li>
+        <ul class="primary-navigation__list | flex" role="list">
+          <li
+            class="primary-navigation__list-el list-dropdown | flex clr-primary-400"
+          >
+            <p>Features</p>
+            <img
+              src="./images/icon-arrow-up.svg"
+              alt="icon"
+              class="list-dropdown__icon"
+            />
+            <div class="dropdown-wrapper features-dropdown">
+              <ul class="dropdown-list | flex">
+                <li class="dropdown-list-el">
+                  <a href="#" class="dropdown-link | clr-primary-400">
+                    <img
+                      class="dropdown-icon"
+                      src="./images/icon-todo.svg"
+                      alt="icon"
+                    />
+                    <p>Todo List</p>
+                  </a>
+                </li>
+                <li class="dropdown-list-el">
+                  <a href="#" class="dropdown-link | clr-primary-400">
+                    <img
+                      class="dropdown-icon"
+                      src="./images/icon-calendar.svg"
+                      alt="icon"
+                    />
+                    <p>Calendar</p>
+                  </a>
+                </li>
+                <li class="dropdown-list-el">
+                  <a href="#" class="dropdown-link | clr-primary-400">
+                    <img
+                      class="dropdown-icon"
+                      src="./images/icon-reminders.svg"
+                      alt="icon"
+                    />
+                    <p>Reminds</p>
+                  </a>
+                </li>
+                <li class="dropdown-list-el">
+                  <a href="#" class="dropdown-link | clr-primary-400">
+                    <img
+                      class="dropdown-icon"
+                      src="./images/icon-planning.svg"
+                      alt="icon"
+                    />
+                    <p>Planning</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="primary-navigation__list-el list-dropdown | flex clr-primary-400"
+          >
+            <p>Company</p>
+            <img
+              src="./images/icon-arrow-up.svg"
+              alt="icon"
+              class="list-dropdown__icon"
+            />
+            <div class="dropdown-wrapper company-dropdown">
+              <ul class="dropdown-list | flex">
+                <li class="dropdown-list-el">
+                  <a href="#" class="dropdown-link | clr-primary-400">
+                    <p>History</p>
+                  </a>
+                </li>
+                <li class="dropdown-list-el">
+                  <a href="#" class="dropdown-link | clr-primary-400">
+                    <p>Our Team</p>
+                  </a>
+                </li>
+                <li class="dropdown-list-el">
+                  <a href="#" class="dropdown-link | clr-primary-400">
+                    <p>Blog</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="primary-navigation__list-el">
+            <a href="#" class="primary-navigation__list-link | clr-primary-400">
+              Careers</a
+            >
+          </li>
+          <li class="primary-navigation__list-el">
+            <a href="#" class="primary-navigation__list-link | clr-primary-400">
+              About</a
+            >
+          </li>
         </ul>
       </nav>
 
       <div class="login-container">
-        <button class="button button-login">Login</button>
-        <button class="button button-register">Register</button>
+        <button class="button button-login | clr-primary-800">Login</button>
+        <button class="button button-register | clr-primary-800">
+          Register
+        </button>
       </div>
     </header>
 
-    <main class="remote">
+    <main class="remote | even-col">
       <div class="remote__container">
         <div class="remote__text">
-          <h1 class="remote__title">Make remote work</h1>
-          <p class="remote-desc">
+          <h1 class="remote__title | clr-primary-800 fw-bold">
+            Make remote work
+          </h1>
+          <p class="remote-desc | clr-primary-400">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
@@ -69,5 +163,7 @@
       </div>
       <div class="remote__image-container"></div>
     </main>
+
+    <script src="app.js"></script>
   </body>
 </html>
