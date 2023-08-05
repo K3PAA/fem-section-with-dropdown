@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="primary-header">
+      <a href="#" class="primary-header__logo">
+        <img
+          src="./images/logo.svg"
+          alt="logo"
+          class="primary-header__logo-img"
+        />
+      </a>
+
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <img class="icon-menu" src="images/icon-menu.svg" aria-hidden="true" />
+        <img
+          class="icon-close"
+          src="images/icon-close-menu.svg"
+          aria-hidden="true"
+        />
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation">
+        <ul class="primary-navigation__list" role="list">
+          <li class="primary-navigation__list-el">Features</li>
+          <li class="primary-navigation__list-el">Company</li>
+          <li class="primary-navigation__list-el"><a href="#"> Careers</a></li>
+          <li class="primary-navigation__list-el"><a href="#"> About</a></li>
+        </ul>
+      </nav>
+
+      <div class="login-container">
+        <button class="button button-login">Login</button>
+        <button class="button button-register">Register</button>
+      </div>
+    </header>
+
+    <main class="remote">
+      <div class="remote__container">
+        <div class="remote__text">
+          <h1 class="remote__title">Make remote work</h1>
+          <p class="remote-desc">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="button remote-btn">Learn more</button>
+        </div>
+        <div class="remote-sponsors">
+          <img src="./images/client-databiz.svg" alt="databiz" />
+          <img src="./images/client-audiophile.svg" alt="audiophile" />
+          <img src="./images/client-meet.svg" alt="meet" />
+          <img src="./images/client-maker.svg" alt="maker" />
+        </div>
+      </div>
+      <div class="remote__image-container"></div>
+    </main>
+  </body>
+</html>
