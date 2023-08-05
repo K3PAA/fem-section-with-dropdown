@@ -23,7 +23,7 @@
       </a>
 
       <button
-        class="mobile-nav-toggle"
+        class="mobile-nav-toggle | button"
         aria-controls="primary-navigation"
         aria-expanded="false"
       >
@@ -36,109 +36,123 @@
         <span class="visually-hidden">Menu</span>
       </button>
 
-      <nav class="primary-navigation" id="primary-navigation">
-        <ul class="primary-navigation__list | flex" role="list">
-          <li
-            class="primary-navigation__list-el list-dropdown | flex clr-primary-400"
-          >
-            <p>Features</p>
-            <img
-              src="./images/icon-arrow-up.svg"
-              alt="icon"
-              class="list-dropdown__icon"
-            />
-            <div class="dropdown-wrapper features-dropdown">
-              <ul class="dropdown-list | flex">
-                <li class="dropdown-list-el">
-                  <a href="#" class="dropdown-link | clr-primary-400">
-                    <img
-                      class="dropdown-icon"
-                      src="./images/icon-todo.svg"
-                      alt="icon"
-                    />
-                    <p>Todo List</p>
-                  </a>
-                </li>
-                <li class="dropdown-list-el">
-                  <a href="#" class="dropdown-link | clr-primary-400">
-                    <img
-                      class="dropdown-icon"
-                      src="./images/icon-calendar.svg"
-                      alt="icon"
-                    />
-                    <p>Calendar</p>
-                  </a>
-                </li>
-                <li class="dropdown-list-el">
-                  <a href="#" class="dropdown-link | clr-primary-400">
-                    <img
-                      class="dropdown-icon"
-                      src="./images/icon-reminders.svg"
-                      alt="icon"
-                    />
-                    <p>Reminds</p>
-                  </a>
-                </li>
-                <li class="dropdown-list-el">
-                  <a href="#" class="dropdown-link | clr-primary-400">
-                    <img
-                      class="dropdown-icon"
-                      src="./images/icon-planning.svg"
-                      alt="icon"
-                    />
-                    <p>Planning</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li
-            class="primary-navigation__list-el list-dropdown | flex clr-primary-400"
-          >
-            <p>Company</p>
-            <img
-              src="./images/icon-arrow-up.svg"
-              alt="icon"
-              class="list-dropdown__icon"
-            />
-            <div class="dropdown-wrapper company-dropdown">
-              <ul class="dropdown-list | flex">
-                <li class="dropdown-list-el">
-                  <a href="#" class="dropdown-link | clr-primary-400">
-                    <p>History</p>
-                  </a>
-                </li>
-                <li class="dropdown-list-el">
-                  <a href="#" class="dropdown-link | clr-primary-400">
-                    <p>Our Team</p>
-                  </a>
-                </li>
-                <li class="dropdown-list-el">
-                  <a href="#" class="dropdown-link | clr-primary-400">
-                    <p>Blog</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="primary-navigation__list-el">
-            <a href="#" class="primary-navigation__list-link | clr-primary-400">
-              Careers</a
+      <div class="mobile-grouping | flex">
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul class="primary-navigation__list | flex" role="list">
+            <li
+              class="primary-navigation__list-el list-dropdown | flex clr-primary-400"
             >
-          </li>
-          <li class="primary-navigation__list-el">
-            <a href="#" class="primary-navigation__list-link | clr-primary-400">
-              About</a
-            >
-          </li>
-        </ul>
-      </nav>
+              <p class="list-dropdown__title | flex">
+                Features
+                <img
+                  src="./images/icon-arrow-up.svg"
+                  alt="icon"
+                  class="list-dropdown__icon"
+                />
+              </p>
 
-      <div class="login-container">
-        <button class="button button-login | clr-primary-800">Login</button>
-        <button class="button button-register | clr-primary-800">
-          Register
-        </button>
+              <div class="dropdown-wrapper features-dropdown">
+                <ul class="dropdown-list | flex">
+                  <li class="dropdown-list-el">
+                    <a href="#" class="dropdown-link | clr-primary-400">
+                      <img
+                        class="dropdown-icon"
+                        src="./images/icon-todo.svg"
+                        alt="icon"
+                      />
+                      <p>Todo List</p>
+                    </a>
+                  </li>
+                  <li class="dropdown-list-el">
+                    <a href="#" class="dropdown-link | clr-primary-400">
+                      <img
+                        class="dropdown-icon"
+                        src="./images/icon-calendar.svg"
+                        alt="icon"
+                      />
+                      <p>Calendar</p>
+                    </a>
+                  </li>
+                  <li class="dropdown-list-el">
+                    <a href="#" class="dropdown-link | clr-primary-400">
+                      <img
+                        class="dropdown-icon"
+                        src="./images/icon-reminders.svg"
+                        alt="icon"
+                      />
+                      <p>Reminds</p>
+                    </a>
+                  </li>
+                  <li class="dropdown-list-el">
+                    <a href="#" class="dropdown-link | clr-primary-400">
+                      <img
+                        class="dropdown-icon"
+                        src="./images/icon-planning.svg"
+                        alt="icon"
+                      />
+                      <p>Planning</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="primary-navigation__list-el list-dropdown | flex clr-primary-400"
+            >
+              <p class="list-dropdown__title | flex">
+                Company
+                <img
+                  src="./images/icon-arrow-up.svg"
+                  alt="icon"
+                  class="list-dropdown__icon"
+                />
+              </p>
+
+              <div class="dropdown-wrapper company-dropdown">
+                <ul class="dropdown-list | flex">
+                  <li class="dropdown-list-el">
+                    <a href="#" class="dropdown-link | clr-primary-400">
+                      <p>History</p>
+                    </a>
+                  </li>
+                  <li class="dropdown-list-el">
+                    <a href="#" class="dropdown-link | clr-primary-400">
+                      <p>Our Team</p>
+                    </a>
+                  </li>
+                  <li class="dropdown-list-el">
+                    <a href="#" class="dropdown-link | clr-primary-400">
+                      <p>Blog</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="primary-navigation__list-el">
+              <a
+                href="#"
+                class="primary-navigation__list-link | clr-primary-400"
+              >
+                Careers</a
+              >
+            </li>
+            <li class="primary-navigation__list-el">
+              <a
+                href="#"
+                class="primary-navigation__list-link | clr-primary-400"
+              >
+                About</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="login-container">
+          <button class="button button-login | clr-primary-800">Login</button>
+          <button class="button button-register | clr-primary-800">
+            Register
+          </button>
+        </div>
       </div>
     </header>
 

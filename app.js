@@ -19,3 +19,15 @@ function toggleOpen() {
 dropDown.forEach((el) => {
   el.addEventListener('click', toggleOpen)
 })
+
+const navToggle = document.querySelector('.mobile-nav-toggle')
+const primaryNav = document.querySelector('.primary-navigation')
+const mobileGroup = document.querySelector('.mobile-grouping')
+
+navToggle.addEventListener('click', () => {
+  primaryNav.hasAttribute('data-visible')
+    ? navToggle.setAttribute('aria-expanded', false)
+    : navToggle.setAttribute('aria-expanded', true)
+  primaryNav.toggleAttribute('data-visible')
+  mobileGroup.classList.toggle('active')
+})
